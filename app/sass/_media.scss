@@ -1,0 +1,35 @@
+@media only screen and (max-width: 667px) {
+  .menu-trigger {
+    display: block;
+    padding: 9px 10px;
+    margin-left: 20px;
+    border: solid 1px #000;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  nav ul li {
+    display: block;
+    border-top: 1px #79896D solid;    
+  }
+  nav ul {
+    display: none;
+  }
+  .right {
+  	float: none;
+  }
+  .home {
+  	display: none;
+  }
+  #nav {
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .slider__photos-item {
+    h1 {
+      top: 10% !important;
+    }
+  }
+}
