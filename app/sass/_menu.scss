@@ -1,11 +1,11 @@
 
 
 .right {
-	float: right;
+	margin-right: 0;
 }
 nav {
   width: 100%;
-  background-color:#65A8A6;
+  background-color: #fff;
 }
 
 nav ul li {
@@ -13,10 +13,9 @@ nav ul li {
 }
 
 nav a {
-  color:#F8ECC2;
+  color: #F8ECC2;
   display:block;
   text-decoration: none;
-  padding:20px 30px;
  }
 
 .menu-trigger {
@@ -24,27 +23,67 @@ nav a {
   color: #F8ECC2;
 }
 
-#header {
-	    height: 180px;
+
+.nav{
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	&__menu {
+		margin: 0;
+		padding-left: 7.98%;
+		display: flex;
+		align-items: center;
+		&-right {
+			padding-right: 7.98%;
+			padding-left: 0;
+			margin: 0;
+			font-size: 15px;
+			a {
+				color: #49cbcd;
+				text-decoration: none;
+				margin: 0 0 0 0px;
+				padding: 10px 15px;
+				font-family: "OpenSansRegular";
+				font-size: 15px;
+				padding: 42px 20px;
+				
+				&:hover {
+					background-color: #f8f9fb;
+					border-bottom: 3px solid #49cbcd;
+					color: #49cbcd;
+				}  
+			}
+			&-active {
+				background-color: #f8f9fb;
+				border-bottom: 3px solid #49cbcd;
+				a {
+					color: #49cbcd;
+				}
+				&:hover {
+					border-bottom: none;
+				}
+			}
+		}
+		&-home {
+			font-size: 43px;
+			a {
+				margin: 0;
+				padding: 0;
+				color: #44c0c2;
+				font-family:"Lobster1.4";
+			}
+		}
 	}
-	#nav{
-	    font-size: 16px;
-	    position: relative;
-	    z-index: 1000;
-	}
-	#nav.fixed{
+}
+	.nav.fixed{
 	    position: fixed;
 	    top: 0;
 	    width: 100%;
 	}
 	
-	#menu {
-    margin: 0;
-  }
-	#menu a {
-	    color: #fff;
-	    text-decoration: none;
-	}
+	
+	
 	
 
 

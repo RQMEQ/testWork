@@ -2,23 +2,23 @@
 $(document).ready(function() {
 	$('.menu-trigger').click(function() {
 		$('nav ul').slideToggle(500);
-  });//end slide toggle
+  });
 
 	$(window).resize(function() {		
 		if (  $(window).width() > 500 ) {			
 			$('nav ul').removeAttr('style');
 		}
-	});//end resize
-});//end ready
+	});
+});
 
 //фиксированние меню
 jQuery(function($) {
 	$(window).scroll(function(){
 		if($(this).scrollTop()>140){
-			$('#nav').addClass('fixed');
+			$('.nav').addClass('fixed');
 		}
 		else if ($(this).scrollTop()<140){
-			$('#nav').removeClass('fixed');
+			$('.nav').removeClass('fixed');
 		}
 	});
 });
@@ -53,3 +53,15 @@ btn_next.onclick = function(){
      
      images[i].style.display = 'block';
 }
+
+
+
+//скрипт всплытия картинки плюсика при ховере 
+$(document).ready(function(){
+    $('.team__content-item').hover(
+        function(){ 
+            $(this).find('.team__content-item-block-plus').toggleClass('visible');
+        }
+    );
+});
+

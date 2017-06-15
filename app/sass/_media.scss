@@ -1,35 +1,108 @@
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 765px) {
   .menu-trigger {
     display: block;
     padding: 9px 10px;
     margin-left: 20px;
-    border: solid 1px #000;
+    margin: 10px;
+    border: solid 1px #417b7c;
     border-radius: 4px;
-    color: #000;
+    color: #fff;
+    background-color: #44c0c2;
     cursor: pointer;
   }
   
   nav ul li {
     display: block;
-    border-top: 1px #79896D solid;    
+    border-top: 1px #417b7c solid;    
   }
   nav ul {
     display: none;
   }
-  .right {
-  	float: none;
-  }
-  .home {
-  	display: none;
-  }
-  #nav {
+  
+  .nav {
     position: absolute;
+    display: block;
+    &__menu {
+      &-home {
+        display: none;
+      }
+      &-right {
+        text-align: center;
+        padding: 0;
+        a {
+          padding-bottom: 20px;
+          padding-top: 20px;
+          color: #44c0c2;
+          &:hover {
+            border: none;
+          }
+        }
+        &-active {
+            border: none;
+          }
+      }
+    }
   }
 }
 @media only screen and (max-width: 1060px) {
   .slider__photos-item {
     h1 {
-      top: 10% !important;
+      top: 15%;
+      font-size: 40px;
+    }
+    button {
+      padding: 15px 35px;
+      font-size: 22px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .slider__photos-item {
+    button {
+      top: 70%;
+      padding: 10px 30px;
+    }
+    h1 {
+      font-size: 33px;
+      top: 25%;
+    }
+  }
+  .team__content {
+    flex-direction: column;
+  }
+  .team__content-item-block-plus {
+    top: 42%;
+    left: 47%;
+  }
+}
+@media only screen and (max-width: 848px) {
+  .offer__content {
+    flex-direction: column;
+  }
+  .offer__content-item {
+  margin-right: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  input {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    .contact__left {
+      max-width: 100%;
+    }
+    .contact__right {
+      max-width: 100%;
     }
   }
 }
