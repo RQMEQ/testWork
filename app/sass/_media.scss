@@ -1,4 +1,4 @@
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 785px) {
   .menu-trigger {
     display: block;
     padding: 9px 10px;
@@ -50,7 +50,7 @@
       top: 15%;
       font-size: 40px;
     }
-    button {
+    div {
       padding: 15px 35px;
       font-size: 22px;
     }
@@ -61,7 +61,7 @@
 }
 @media only screen and (max-width: 1060px) {
   .slider__photos-item {
-    button {
+    div {
       top: 70%;
       padding: 10px 30px;
     }
@@ -87,14 +87,7 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 1200px) {
-  input {
-    margin-bottom: 10px;
-    margin-right: 0;
-    width: 100%;
-    float: left;
-  }
-}
+
 @media only screen and (max-width: 1024px) {
   .contact {
     flex-direction: column;
@@ -103,6 +96,17 @@
     }
     .contact__right {
       max-width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contact__right {
+    input {
+      margin-bottom: 10px;
+      margin-right: 0;
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
     }
   }
 }

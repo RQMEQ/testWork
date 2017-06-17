@@ -11,6 +11,7 @@ $(document).ready(function() {
 	});
 });
 
+
 //фиксированние меню
 jQuery(function($) {
 	$(window).scroll(function(){
@@ -23,6 +24,20 @@ jQuery(function($) {
 	});
 });
 
+
+/*Плавный переход по якорям*/
+$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+   e.preventDefault();
+   
+   var target = this.hash,
+   $target = $(target);
+   
+   $('html, body').stop().animate({
+       'scrollTop': $target.offset().top
+   }, 1000, 'swing', function () {
+       window.location.hash = target;
+   });
+});
 
 
 //слайдер
@@ -64,4 +79,74 @@ $(document).ready(function(){
         }
     );
 });
+
+//Валидация на более длинный комментарий
+function validateComments(input) {
+       if (input.value.length < 3) {
+          input.setCustomValidity("Дайте более развернутый ответ.");   
+       }
+       else {
+          // Длина комментария отвечает требованию, 
+          // поэтому очищаем сообщение об ошибке
+          input.setCustomValidity("");
+       }
+}
+
+
+
+
+/*var planHover = (function() {
+
+	var basic = document.querySelector(".offer__content-item-basic");
+	var buy = document.querySelector(".offer__content-item-bbasic");
+
+	buy.addEventListener("mouseenter",
+		function () {
+			buy.style.backgroundColor = "#49cbcd";
+			basic.style.backgroundColor = "#49cbcd";
+		});
+
+	buy.addEventListener("mouseleave",
+		function () {
+			buy.style.backgroundColor = "#788492";
+			basic.style.backgroundColor = "#485460";
+		});
+
+})();*/
+
+
+
+
+
+
+
+$('.offer__content-item-bbasic').hover(
+    function(){
+        $('.offer__content-item-basic').css('background-color','#49cbcd');
+    },
+    function(){
+        $('.offer__content-item-basic').css('background-color','#485460');
+    }
+);
+
+$('.offer__content-item-bpro').hover(
+    function(){
+        $('.offer__content-item-pro').css('background-color','#49cbcd');
+    },
+    function(){
+        $('.offer__content-item-pro').css('background-color','#485460');
+    }
+);
+
+$('.offer__content-item-bprem').hover(
+    function(){
+        $('.offer__content-item-premium').css('background-color','#49cbcd');
+    },
+    function(){
+        $('.offer__content-item-premium').css('background-color','#485460');
+    }
+);
+
+
+
 

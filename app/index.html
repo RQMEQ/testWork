@@ -15,11 +15,11 @@
 		</ul>
 		<ul class="nav__menu-right">
 			<li class="nav__menu-right-active"><a href="#">Home</a></li>
-			<li><a href="#">Service</a></li>
+			<li><a href="#service">Service</a></li>
 			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Team</a></li>
+			<li><a href="#team">Team</a></li>
 			<li><a href="#">Blog</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 	<div class="slider">
@@ -29,28 +29,28 @@
 				<h1>This is a main heading</h1>
 				<p>Lorem Ipsum is simply dummy text</p>
 				<p>of the printing</p>
-				<button>Learn More</button>	
+				<div><a href="#">Learn More</a></div>	
 			</div>
 			<div class="slider__photos-item">
 				<img src="img/sl2.jpg">
 				<h1>This is a main heading</h1>
 				<p>Lorem Ipsum is simply dummy text</p>
 				<p>of the printing</p>
-				<button>Learn More</button>	
+				<div><a href="#">Learn More</a></div>	
 			</div>
 			<div class="slider__photos-item">
 				<img src="img/sl1.jpg">
 				<h1>This is a main heading</h1>
 				<p>Lorem Ipsum is simply dummy text</p>
 				<p>of the printing</p>
-				<button>Learn More</button>	
+				<div><a href="#">Learn More</a></div>	
 			</div>
 		</div>
 		<i class="fa fa-2x fa-chevron-circle-left slider__buttons slider__buttons-prev" aria-hidden="true"></i>
 		<i class="fa fa-2x fa-chevron-circle-right slider__buttons slider__buttons-next" aria-hidden="true"></i>
 	</div>
 	<main>
-		<section class="team">
+		<section id="team" class="team">
 			<h3>The Team</h3>
 			<div class="team__content">
 				<div class="team__content-item">
@@ -91,7 +91,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="offer">
+		<section id="service" class="offer">
 			<div class="offer__content">
 				<div class="offer__content-item">
 					<form action="" method="post">
@@ -103,12 +103,12 @@
 						<p>Proin commodo turpis</p>
 						<p>lacus pulvinarvel </p>
 						<p>Prnare nisi pretium.</p>
-						<p><button type="submit" class="offer__content-item-buttBasic">Buy now</button></p>
+						<p><button type="submit" class="offer__content-item-bbasic">Buy now</button></p>
 					</form>
 				</div>
 				<div class="offer__content-item">
 					<form action="" method="post">
-						<h3 class="offer__content-item-h offer__content-item-basic">Pro</h3>
+						<h3 class="offer__content-item-h offer__content-item-pro">Pro</h3>
 						<p class="price">$10.01/ Month</p>
 						<p>Lorem ipsum</p>
 						<p>Dolor sit amet, consect</p>
@@ -116,12 +116,12 @@
 						<p>Proin commodo turpis</p>
 						<p>lacus pulvinarvel </p>
 						<p>Prnare nisi pretium.</p>
-						<p><button type="submit" class="offer__content-item-buttBasic">Buy now</button></p>
+						<p><button type="submit" class="offer__content-item-bpro">Buy now</button></p>
 					</form>
 				</div>
 				<div class="offer__content-item">
 					<form action="" method="post">
-						<h3 class="offer__content-item-h offer__content-item-basic">Premium</h3>
+						<h3 class="offer__content-item-h offer__content-item-premium">Premium</h3>
 						<p class="price">$20.01/ Month</p>
 						<p>Lorem ipsum</p>
 						<p>Dolor sit amet, consect</p>
@@ -129,13 +129,13 @@
 						<p>Proin commodo turpis</p>
 						<p>lacus pulvinarvel </p>
 						<p>Prnare nisi pretium.</p>
-						<p><button type="submit" class="offer__content-item-buttBasic">Buy now</button></p>
+						<p><button type="submit" class="offer__content-item-bprem">Buy now</button></p>
 					</form>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer id="contact">
 		<h3>Contact Us</h3>
 		<div class="contact">
 			<div class="contact__left">
@@ -154,7 +154,7 @@
 			</div>
 			<div class="contact__right">
 				<form action="" method="post">
-					<input type="text" size="20" placeholder="Name" pattern="[A-Za-z0-9_-]{3,20}">
+					<input type="text" size="20" placeholder="Name" autofocus required pattern="[A-Za-z0-9_-]{3,20}">
 					<input type="email" placeholder="Email">
 					<p><textarea rows="10" name="text" placeholder="Message" id="comments" oninput="validateComments(this)"></textarea></p>
 					<button type="submit">Send</button>
