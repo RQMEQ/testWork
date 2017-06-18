@@ -80,6 +80,27 @@ $(document).ready(function(){
     );
 });
 
+   
+
+
+//подсвечивание заголовка блока и кнопки "Buy now" по наведению ТОЛЬКО лишь на кнопку buy now. а не на весь блок.
+$(document).ready(function(){
+  $('.offer__content-item').on('mouseover', 'button', function(e){
+    e.preventDefault();
+    $(this).closest('form').find('h3').addClass('main__active');
+    $(this).closest('form').find('button').addClass('main__active');
+  });
+});
+$(document).ready(function(){
+  $('.offer__content-item').on('mouseout', 'button', function(e){
+    e.preventDefault();
+    $(this).closest('form').find('h3').removeClass('main__active');
+    $(this).closest('form').find('button').removeClass('main__active');
+  });
+});
+
+
+
 //Валидация на более длинный комментарий
 function validateComments(input) {
        if (input.value.length < 3) {
@@ -91,62 +112,3 @@ function validateComments(input) {
           input.setCustomValidity("");
        }
 }
-
-
-
-
-/*var planHover = (function() {
-
-	var basic = document.querySelector(".offer__content-item-basic");
-	var buy = document.querySelector(".offer__content-item-bbasic");
-
-	buy.addEventListener("mouseenter",
-		function () {
-			buy.style.backgroundColor = "#49cbcd";
-			basic.style.backgroundColor = "#49cbcd";
-		});
-
-	buy.addEventListener("mouseleave",
-		function () {
-			buy.style.backgroundColor = "#788492";
-			basic.style.backgroundColor = "#485460";
-		});
-
-})();*/
-
-
-
-
-
-
-
-$('.offer__content-item-bbasic').hover(
-    function(){
-        $('.offer__content-item-basic').css('background-color','#49cbcd');
-    },
-    function(){
-        $('.offer__content-item-basic').css('background-color','#485460');
-    }
-);
-
-$('.offer__content-item-bpro').hover(
-    function(){
-        $('.offer__content-item-pro').css('background-color','#49cbcd');
-    },
-    function(){
-        $('.offer__content-item-pro').css('background-color','#485460');
-    }
-);
-
-$('.offer__content-item-bprem').hover(
-    function(){
-        $('.offer__content-item-premium').css('background-color','#49cbcd');
-    },
-    function(){
-        $('.offer__content-item-premium').css('background-color','#485460');
-    }
-);
-
-
-
-

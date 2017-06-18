@@ -1,7 +1,3 @@
-body {
-  max-width: 1920px;
-  width: 100%; }
-
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
 @font-face {
   font-family: "Lobster1.4";
@@ -33,8 +29,9 @@ body {
   font-style: normal;
   font-weight: normal; }
 
-.right {
-  margin-right: 0; }
+body {
+  max-width: 1920px;
+  width: 100%; }
 
 nav {
   width: 100%;
@@ -189,6 +186,12 @@ nav a {
 .visible {
   opacity: 1 !important; }
 
+.main__active {
+  background-color: #49cbcd !important;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s; }
+
 .team {
   margin-top: 100px;
   max-width: 100%;
@@ -252,7 +255,10 @@ nav a {
   max-width: 100%;
   padding-left: 10.66%;
   padding-right: 10.66%;
-  font-family: "OpenSansRegular"; }
+  font-family: "OpenSansRegular";
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s; }
   .offer__content {
     display: -webkit-box;
     display: -webkit-flex;

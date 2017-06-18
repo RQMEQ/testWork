@@ -1,6 +1,10 @@
 .visible {
 	opacity: 1!important;
 }
+.main__active {
+	background-color: #49cbcd!important;
+	transition: background 1s;
+}
 .team {
 	margin-top: 100px;
 	max-width: 100%;
@@ -66,6 +70,7 @@
 	padding-left: 10.66%;
 	padding-right: 10.66%;
 	font-family: "OpenSansRegular";
+	transition: background 1s;
 	&__content {
 		display: flex;
 		&-item {
