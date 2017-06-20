@@ -1,3 +1,0 @@
-.find
-https://jquery-docs.ru/find/
-https://toster.ru/q/146735
