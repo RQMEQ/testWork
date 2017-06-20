@@ -383,6 +383,9 @@ footer {
         cursor: pointer; }
 
 @media only screen and (max-width: 785px) {
+  .slider__photos-item a {
+    padding: 10px 15px;
+    font-size: 20px; }
   .menu-trigger {
     display: block;
     padding: 9px 10px;
@@ -401,7 +404,8 @@ footer {
     display: none; }
   .nav {
     position: absolute;
-    display: block; }
+    display: block;
+    top: 0; }
     .nav__menu-home {
       display: none; }
     .nav__menu-right {
@@ -415,6 +419,10 @@ footer {
           border: none; }
       .nav__menu-right-active {
         border: none; } }
+
+@media only screen and (max-width: 560px) {
+  .slider {
+    display: none; } }
 
 @media only screen and (max-width: 1060px) {
   .slider__photos-item h1 {

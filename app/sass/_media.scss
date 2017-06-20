@@ -1,4 +1,8 @@
 @media only screen and (max-width: 785px) {
+  .slider__photos-item a {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
   .menu-trigger {
     display: block;
     padding: 9px 10px;
@@ -22,6 +26,7 @@
   .nav {
     position: absolute;
     display: block;
+    top: 0;
     &__menu {
       &-home {
         display: none;
@@ -44,6 +49,15 @@
     }
   }
 }
+@media only screen and (max-width: 560px) {
+
+  .slider{
+    display: none;
+  } 
+
+}
+
+
 @media only screen and (max-width: 1060px) {
   .slider__photos-item {
     h1 {
